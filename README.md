@@ -3,7 +3,12 @@
 
 # Git
 
-## keygen
+## Install 
+```bash
+sudo apt install git
+```
+
+## SSH keygen
 ```bash
 ls -al ~/.ssh
 
@@ -16,9 +21,6 @@ ssh-keygen -t ed25519 -C "usuario@email.com"
 cat ~/.ssh/id_ed25519.pub
 ```
 
-```bash
-sudo apt install git
-```
 
 
 
@@ -26,4 +28,11 @@ sudo apt install git
  
 ```bash
 sudo apt install terminator
+```
+
+
+# i3 Window Manager
+
+```bash
+cp i3_config_mate ~/.config/i3/config
 ```
