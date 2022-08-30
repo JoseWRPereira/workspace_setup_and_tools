@@ -36,3 +36,29 @@ sudo apt install terminator
 ```bash
 cp i3_config_mate ~/.config/i3/config
 ```
+
+
+# Peek: Simple Screen recorder
+```bash
+sudo apt install peek
+```
+
+# Visual Studio Code
+```bash
+sudo dpkg -i codexxxxxxx.deb
+```
+
+
+# USB
+
+Editar o arquivo a seguir ou equivalente:
+
+```bash
+user@host:~$ sudo nano /etc/udev/rules.d/z010_mchp_tools.rules
+```
+
+incluir a seguinte linha para o reconhecimento do PICkit2
+
+```bash
+ATTR{idVendor}=="04d8", ATTR{idProduct}=="0033", MODE="666"
+```
